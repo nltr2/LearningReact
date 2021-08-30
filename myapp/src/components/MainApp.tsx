@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Parent from "./parent";
 
 function MainApp(){
     return (
         
         <div>
             <Header/>
-            <p>welcome to Main APP</p>
+            <Parent/>
             <Footer/>
         </div>
        
