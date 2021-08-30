@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node welcome.js",
+    "start": "node build/welcome.js",
     "build":"tsc"
   },
   "keywords": [],
