@@ -1,6 +1,8 @@
 import React from "react";
 
-
-export const Child =()=>{
-    return <div>Welcome to child</div>
+interface ChildProps {
+    color:string
+}
+export const Child =({color}:ChildProps)=>{
+    return <div>{color}</div>
 }

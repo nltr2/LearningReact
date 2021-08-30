@@ -3,7 +3,7 @@ import { Child } from "./Child";
 
 
 const Parent=()=>{
-    return <div><Child></Child></div>
+    return <div><Child color="pink"></Child></div>
 }
 
 export default Parent;
