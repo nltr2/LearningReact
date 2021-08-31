@@ -11,7 +11,7 @@ function MainApp(){
             <Header/>
             <Welcome />
             <Parent/>
-
+            
             <Footer/>
         </div>
        
