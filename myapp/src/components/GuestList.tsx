@@ -22,7 +22,7 @@ const GuestList:React.FC=()=>{
          }
         )}  
 
-         {/* another using (  round brackets ,no return statement */}
+         {/* another using (  round brackets ,no return statement for li */}
         {/*  {guests.map((guest) =>(
                <li key={guest}>{guest}</li>
            ))} */}
