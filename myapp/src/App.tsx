@@ -6,10 +6,6 @@ import MainApp from './components/MainApp';
 function App() {
   return (
     <div className="App">
-      
-        <p>
-          welcome to react with TSX.
-        </p>
        <MainApp/>
     </div>
   );
