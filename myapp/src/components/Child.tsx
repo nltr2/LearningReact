@@ -9,9 +9,10 @@ interface ChildProps {
 }
  */
 
-export const Child : React.FC<ChildProps>=(obj) =>{
+export const Child : React.FC<ChildProps>=({color,onClick,children}) =>{
     return <div>
-        {obj.color}
-        <button onClick={obj.onClick}>call me</button>
+        {color}
+        {children}
+        <button onClick={onClick} >call me</button>
         </div>
 }
