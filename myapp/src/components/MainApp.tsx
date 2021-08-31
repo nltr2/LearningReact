@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import GuestList from "./GuestList";
 import Header from "./Header";
 import Parent from "./parent";
+import UserSearch from "./UserSearch";
 
 function MainApp(){
     return (
@@ -15,6 +16,7 @@ function MainApp(){
             
             <Footer/> */}
             <GuestList></GuestList>
+            <UserSearch/>
         </div>
        
     )
