@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import MainApp from './components/MainApp';
 import NoteApp from './lifecycleapp/NoteApp';
+import RestApp from './lifecycleapp/RestApp';
 
 function App() {
   return (
     <div className="App">
        {/* <MainApp/> */}
-       <NoteApp/>
+      {/*  <NoteApp/> */}
+      <RestApp/>
     </div>
   );
 }
