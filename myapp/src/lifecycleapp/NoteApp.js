@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const NoteApp=() =>{
 
@@ -11,6 +11,23 @@ const addNote=(e) =>{
 setNotes([
     ...notes,{title,body}
 ])}
+
+/* only for every time */
+useEffect(()=>{
+    console.log("called everytime");
+})
+
+/* only for first time */
+useEffect(()=>{
+    console.log("first time")
+    /* getting notes from local storage even browser is refreshed */
+   setNotes(JSON.parse(localStorage.getItem('notes')))
+},[])
+
+/* adding hook for change in notes */
+useEffect(()=>{
+    localStorage.setItem('notes',JSON.stringify(notes))
+},[notes])
 
 const removeNote=(title)=>{
     setNotes(notes.filter((note) =>note.title !== title))
