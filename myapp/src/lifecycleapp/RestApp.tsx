@@ -17,6 +17,14 @@ const RestApp =() =>{
     const[error,setError] :[string,(error : string) =>void]=useState('')
 
 useEffect(() =>{
+
+    const postsData = JSON.parse(localStorage.getItem('posts')|| "[]");
+    const pdata=  Array.isArray(postsData) ? postsData : [postsData];
+    /* if data is in local storage ... not calling server */
+    if(pdata && pdata.length>0){
+        setPosts(postsData)
+    }else{
+
     axios.get<IPost[]>('https://jsonplaceholder.typicode.com/posts',{
         headers:{
             'Content-Type': 'application/json'
@@ -38,6 +46,7 @@ useEffect(() =>{
         setError(error)
         setLoading(false)
     })
+}
 },[])
 
 
