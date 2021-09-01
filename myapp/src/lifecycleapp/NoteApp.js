@@ -21,7 +21,10 @@ useEffect(()=>{
 useEffect(()=>{
     console.log("first time")
     /* getting notes from local storage even browser is refreshed */
-   setNotes(JSON.parse(localStorage.getItem('notes')))
+    const notesData = JSON.parse(localStorage.getItem('notes'));
+    if(notesData){
+        setNotes(notesData)
+    }
 },[])
 
 /* adding hook for change in notes */
