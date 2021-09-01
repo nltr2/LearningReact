@@ -23,8 +23,11 @@ useEffect(() =>{
         }
     })
     .then((response)=>{
+        
+        
         setPosts(response.data);
-        setLoading(false)
+        setLoading(false);
+       localStorage.setItem('posts',JSON.stringify(response.data));
     })
     .catch((ex)=>{
         let error =axios.isCancel(ex)
@@ -36,6 +39,8 @@ useEffect(() =>{
         setLoading(false)
     })
 },[])
+
+
 
     return(
         <div className='container'>
