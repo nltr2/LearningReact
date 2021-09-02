@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import LandingPage from './components/routingDemo/LandinPage';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   {/* <App />      */}
+   <LandingPage/>
   </React.StrictMode>,
   document.getElementById('root')
 );
