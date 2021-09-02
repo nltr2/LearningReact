@@ -5,6 +5,7 @@ import MainApp from './components/MainApp';
 import NoteApp from './lifecycleapp/NoteApp';
 import RestApp from './lifecycleapp/RestApp';
 import { InfoPanel, StatusKey } from './components/conditionalDemo/panel-demo';
+import FormDemo from './components/Tasks/FormDemo';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       {/*  <NoteApp/> */}
       {/* <RestApp/> */}
       
-      <InfoPanel statusKey = {StatusKey.SUCCESS} info="Great job"/>
+      {/* <InfoPanel statusKey = {StatusKey.SUCCESS} info="Great job"/>
       <InfoPanel statusKey = {StatusKey.WARNING} info="Warning"/>
-      <InfoPanel statusKey = {StatusKey.ERROR} info="Problem"/>
+      <InfoPanel statusKey = {StatusKey.ERROR} info="Problem"/> */}
+
+      <FormDemo/>
 
     </div>
   );
