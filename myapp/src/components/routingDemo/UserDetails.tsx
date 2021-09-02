@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import UserNames from './UserNames'
 
 interface UserD{
     name:string
@@ -9,6 +10,7 @@ interface UserD{
     const {name} = useParams<UserD>()
     return (
         <div>
+            <UserNames/>
             <p> User : {name}</p>
         </div>
     )
