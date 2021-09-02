@@ -17,7 +17,7 @@ import UserDetails from './UserDetails'
             <Route path='/' component={Login} exact={true}/>
             <Route path='/login' component={Login}/> 
             <Route path='/portfolio' component={PortFolio}/> 
-            <Route path='/userdetails' component={UserDetails}/> 
+            <Route path='/userdetails/:name?' component={UserDetails}/> 
             <Route path='/register' component={Register}/> 
             <Route component={PageNotFound}/>
         </Switch>
