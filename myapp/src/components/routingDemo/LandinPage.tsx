@@ -4,21 +4,22 @@ import Login from "./Login";
 import PageNotFound from "./PageNotFound";
 import PortFolio from "./Portfolio";
 import Register from "./Register";
+import Rotues from "./Routes";
 import UserDetails from "./UserDetails";
 
 const LandingPage =()=>{
 
     return (
         <div>
-           
-            {routes}
+           <Rotues/>
+          
         </div>
     )
 }
 
 export default LandingPage
 
- const Header = ()=>{
+ /* const Header = ()=>{
     return(
         <header>
 
@@ -42,4 +43,4 @@ const routes =(
         </switch>
 
     </BrowserRouter>
-)
+) */
