@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LandingPage from './components/routingDemo/LandinPage';
+import FormDemo from './components/Tasks/FormDemo';
 
 
 ReactDOM.render(
   <React.StrictMode>
    {/* <App />      */}
-   <LandingPage/>
+   {/* <LandingPage/> */}
+   <FormDemo/>
   </React.StrictMode>,
   document.getElementById('root')
 );
